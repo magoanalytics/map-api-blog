@@ -129,7 +129,7 @@ results.head(5)
 ```
 Output:
 
-<img src="image.png" width="400" height="400">
+<img src="output1.png" width="400" height="400">
 
 To get the cafes found in another city, say Manila, we simply write
 ```python
