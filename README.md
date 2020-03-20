@@ -132,7 +132,7 @@ To get the cafes found in another city, say Manila, we simply write
 ```python
 # search cafes located within the city of Manila
 results = gmaps.search_query('Manila')
-results.head(5)
+results.head(10)
 ```
 Output:
 
