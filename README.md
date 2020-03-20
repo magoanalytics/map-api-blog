@@ -122,11 +122,11 @@ results = gmaps.search_query('Makati')
 ```
 To view the top 5 results, we simply run 
 ```python
-results.head(5)
+results.head(10)
 ```
 Output:
 
-<img src="image.png" width="400" height="400">
+<img src="makati_output.png" width="400" height="400">
 
 To get the cafes found in another city, say Manila, we simply write
 ```python
@@ -135,6 +135,8 @@ results = gmaps.search_query('Manila')
 results.head(5)
 ```
 Output:
+
+<img src="manila_output.png" width="400" height="400">
 
 #### Further Explorations 
 As mentioned earlier, the use of class makes it easier for other people to modify some sections of the code to satisfy specific user needs without rewriting everything from scratch. For example, if we want to search cafes outside the Philippines, we simply remove the string `' Philippines'` from the `search_query()` method. 
