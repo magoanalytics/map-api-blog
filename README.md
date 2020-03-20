@@ -15,8 +15,9 @@ The following packages are needed for this tutorial:
 ```python 
 import time
 import googlemaps
+import pandas
 ```
-The libraries time and googlemaps are used to artificially create delay in between code execution and access Google APIs services, respectively.
+The libraries time and googlemaps are used to artificially create delay in between code execution and access Google APIs services, respectively. In addition, we'll use pandas in order to convert our results into organized tables.
 
 #### Class Initialization
 The approach we'll be taking is an object-oriented approach. This allows our code to be more organized, easy to modify, and reusable through inheritance. These advantages will be explored in the later sections. 
@@ -105,7 +106,7 @@ class Gmaps_Search():
         # transform results from dictionary to geodataframe
         name = [result['name'] for result in results]
         geoloc_list = [[result['geometry']['location']['lat'], result['geometry']['location']['lng']] for result in results]
-        output = gpd.GeoDataFrame(zip(name, geometry), columns=['name', 'geometry'])
+        output = pd.DataFrame(zip(name, geometry), columns=['name', 'geometry'])
         return output
 ```
 #### Sample Implementation
