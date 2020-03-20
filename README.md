@@ -1,7 +1,7 @@
 ### Step-by-Step Tutorial to Access Google API Services using Python 
 
 #### Map Data
-Access to accurate real-time map data has become crucial to our everyday life, not just to businesses. Without realizing it, most of us have become reliant on the use of map data to navigate in places we're especially unfamiliar with. Here, we'll explore one of the ways we could access these rich databases, which is through the use of APIs.  
+Access to accurate real-time map data has become crucial to our everyday life, not just to businesses. Without realizing it, most of us have become reliant on the use of map data to navigate in places we're especially unfamiliar with. Here, we'll explore one of the ways we could have access to these rich databases, which is through the use of APIs.  
 
 #### What is an API
 An API, short for application processing interface, is simply a method by which two computer applications can communicate with each other over a network (such as the Internet). This allows authenticated end users to access data and services that have been developed by other people without the need to code or create softwares on their own from scratch. Although there are several applications that provide map data, here we'll be focusing on Google Maps. This is because Google updates their database frequently and provides several APIs that are user-friendly.
