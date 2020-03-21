@@ -6,7 +6,7 @@ Access to accurate real-time map data has become crucial to our everyday life, n
 #### What is an API
 An API, short for application processing interface, is simply a method by which two computer applications can communicate with each other over a network (such as the Internet). This allows authenticated end users to access data and services that have been developed by other people without the need to code or create softwares on their own from scratch. Although there are several applications that provide map data, here we'll be focusing on Google Maps. This is because Google updates their database frequently and provides several APIs that are user-friendly.
 	
-Here, we'll write a script that automatically makes requests to Google API and returns the results as a table. In particular, we'll be using Places API. For implementation, we'll be coding everything using the Python programming language for its user-friendliness. In addition, we'll be utilizing the googlemaps python package, which is an easy-to-use Python wrapper for the Google Maps and Local Search API. 
+Here, we'll write a script that automatically makes requests to Google API and returns the results as a table. In particular, we'll be using Places API to search for cafes found in different cities in the Philippines. For implementation, we'll be coding everything using the Python programming language for its user-friendliness. In addition, we'll be utilizing the googlemaps python package, which is an easy-to-use Python wrapper for the Google Maps and Local Search API. 
 
 As with any other application, proper usage of their APIs is well-documented, including their exact functionality as well as usage limitations and constraints. For more information, visit their official website [Google Places](https://cloud.google.com/maps-platform/places).
 
@@ -55,7 +55,7 @@ Now that we have access to Google APIs, we can start making a request. Specifica
 ```
 
 #### Search Cafes via Places API 
-Finally, we use the city coordinates to get cafe stores found within the city. We first create a list that would contain the results of our query. To obtain the nearest cafes from the city coordinates, we call the method `places_nearby()` and again, provide it with the necessary arguments. The first argument is the required geocoordinates, and must be supplied as a dictionary. The second argument specifies that we want the results to be sorted by distance. The last two arguments constrains the results by the type of establishment and city location.
+Finally, we use the city coordinates to get cafe stores found within that city. We first create a list that would contain the results of our query. To obtain the nearest cafes from the city coordinates, we call the method `places_nearby()` and again, provide it with the necessary arguments. The first argument is the required geocoordinates, and must be supplied as a dictionary. The second argument specifies that we want the results to be sorted by distance. The last two arguments constrains the results by the type of establishment and city location.
 ```python
       # return nearest 60 location given city coordinates
       results = list()
