@@ -55,7 +55,7 @@ Now that we have access to Google APIs, we can start making a request. Specifica
 ```
 
 #### Search Cafes via Places API 
-Finally, we use the city coordinates to get cafe stores found within that city. We first create a list that would contain the results of our query. To obtain the nearest cafes from the city coordinates, we call the method `places_nearby()` and again, provide it with the necessary arguments. The first argument is the required geocoordinates, and must be supplied as a dictionary. The second argument specifies that we want the results to be sorted by distance. The last two arguments constrains the results by the type of establishment and city location.
+Finally, we use the city coordinates to get cafe stores found within that city. We first create a list that would contain the results of our query. To obtain the nearest cafes from the city coordinates, we call the method `places_nearby()` and again, provide it with the necessary arguments. The first argument is the required geocoordinates, and must be supplied as a dictionary. The second argument specifies that we want the results to be sorted by distance. The last two arguments constraint the results by the type of establishment and city location.
 ```python
       # return nearest 60 location given city coordinates
       results = list()
