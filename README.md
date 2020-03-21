@@ -114,7 +114,7 @@ Now that we're done writing our class, let's try to create an instance that sear
 We first call `Gmaps_Search()` and providing it with a valid API key and `cafe` as the type of establishment as follows:  
 ```python
 # initialized class to search for cafes
-gmaps = Gmaps_Search(api_key=key', 'cafe')
+gmaps = Gmaps_Search(api_key=key, 'cafe')
 ```
 We then simply call the method `search_query()` and provide `'Makati'` as the input to get the list of cafes found in Makati.
 ```python
@@ -140,7 +140,7 @@ Output:
 <img src="manila_output.png" width="400" height="400">
 
 #### Further Explorations 
-As mentioned earlier, the use of class makes it easier for other people to modify some sections of the code to satisfy specific user needs without rewriting everything from scratch. For example, if we want to search cafes outside the Philippines, we simply remove the string `' Philippines'` from the `search_query()` method. 
+As mentioned earlier, the use of class makes it easier for other people to modify some sections of the code to satisfy specific user needs without rewriting everything from scratch. For example, if we want to search cafes outside the Philippines, we simply remove the string `Philippines'` from the `search_query()` method. 
 
 Another advantage is that we can create different instances of the same class. If our goal is to search for banks instead of cafes, we simply replaced the type from `'cafe'` to `'bank'` when creating an instance. For a list of valid place types, visit the following link [Place Types](https://developers.google.com/places/supported_types).
 We can also add additional complexity to our class by creating additional methods that would return specific information that the user specifically needs or a method that would visualize the results on a map.
