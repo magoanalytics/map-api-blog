@@ -1,4 +1,4 @@
-### Step-by-Step Tutorial to Access Google API Services using Python 
+### A Step-by-Step Tutorial to Access Google API Services using Python 
 
 #### Map Data
 Access to accurate real-time map data has become crucial to our everyday life, not just to businesses. Without realizing it, most of us have become reliant on the use of map data to navigate in places we're especially unfamiliar with. Here, we'll explore one of the ways we could have access to these rich databases, which is through the use of APIs.  
